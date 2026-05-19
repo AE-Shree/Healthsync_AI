@@ -1,10 +1,13 @@
-fastapi
-uvicorn
-motor
-beanie<2.0.0
-pydantic
-pydantic-settings
-python-jose[cryptography]
-passlib[bcrypt]
-python-multipart
-email-validator
+# Pin all versions so deployments are reproducible.
+# Update deliberately with `uv pip compile` or manual review.
+
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+motor==3.6.0
+beanie==1.28.0          # Pinned <2.0.0 — v2 has breaking ODM changes
+pydantic==2.9.2
+pydantic-settings==2.6.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.12
+email-validator==2.2.0

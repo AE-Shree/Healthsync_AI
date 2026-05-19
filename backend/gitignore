@@ -1,0 +1,35 @@
+# ── Node / Frontend ───────────────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.local
+
+# ── Python / Backend ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Environment / Secrets ─────────────────────────────────────────────
+.env
+.env.local
+.env.production
+# Keep .env.example so people know what vars are needed
+!.env.example
+
+# ── OS / Editor ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ── Logs ──────────────────────────────────────────────────────────────
+*.log
+logs/
